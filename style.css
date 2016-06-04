@@ -1,0 +1,124 @@
+@charset "UTF-8";
+/* font */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat-Regular"), url(https://fonts.gstatic.com/s/montserrat/v7/zhcz-_WihjSQC0oHJ9TCYAzyDMXhdD8sAj6OAJTFsBI.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+/* elements */
+html {
+  font-family: "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-size: 100%;
+  color: black;
+  line-height: 1.6; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white; }
+
+a {
+  color: black; }
+  a:hover {
+    text-decoration: none; }
+
+img {
+  vertical-align: top; }
+
+/* layout */
+#header {
+  overflow: hidden;
+  color: white; }
+
+#main {
+  margin: 0 auto; }
+
+/* module */
+.header-title {
+  float: left;
+  margin: 0 1em;
+  height: 3em;
+  line-height: 3em;
+  vertical-align: middle; }
+
+.header-nav {
+  float: right; }
+
+.map {
+  width: 100%;
+  height: calc(100vh - 3em);
+  border: none; }
+
+.pic__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+  .pic__list li {
+    overflow: hidden;
+    float: left;
+    width: 50vw;
+    height: 50vw; }
+  .pic__list .pic__list__img {
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+    transform: scale(1.25); }
+
+.diary .gist .gist-file {
+  margin-bottom: 0;
+  border: none; }
+.diary .gist .gist-file article {
+  padding: 1em; }
+.diary .gist .markdown-body h1,
+.diary .gist .markdown-body h2 {
+  padding-bottom: 0;
+  border-bottom: none; }
+
+/* site */
+.site-title {
+  position: relative;
+  margin: 0;
+  font-size: 1.5em;
+  font-family: "Montserrat";
+  letter-spacing: .05em; }
+  .site-title > a {
+    color: gold;
+    text-decoration: none; }
+
+.site-title__note {
+  position: absolute;
+  top: -.5em;
+  left: 100%;
+  margin-left: .2em;
+  font-size: .5em;
+  letter-spacing: .025em; }
+
+.site-nav {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+  .site-nav li {
+    float: left; }
+    .site-nav li .site-nav__link {
+      display: block;
+      width: 3em;
+      height: 3em;
+      line-height: 3em;
+      text-align: center; }
+      .site-nav li .site-nav__link.is-active {
+        background-color: rgba(0, 0, 0, 0.15); }
+      .site-nav li .site-nav__link > img {
+        margin-top: -.25em;
+        vertical-align: middle; }
+
+/* theme */
+.theme-header-okinawa {
+  background-color: crimson; }
+  .theme-header-okinawa .site-title > a {
+    color: gold; }
+
+.theme-header-nagano {
+  background-color: royalBlue; }
+  .theme-header-nagano .site-title > a {
+    color: lime; }

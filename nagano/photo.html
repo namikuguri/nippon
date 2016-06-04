@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width">
+    <title>Nagano</title>
+    <meta name="description" content="Nagano">
+    <meta name="theme-color" content="lime">
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+    <header id="header" class="theme-header-nagano">
+      <div class="header-title">
+        <h1 class="site-title"><a href="index.html">Nagano</a></h1>
+      </div>
+      <div class="header-nav">
+        <ul class="site-nav">
+          <li>
+            <a href="index.html" class="site-nav__link">
+              <img class="site-nav__icon" src="../images/map.svg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="photo.html" class="site-nav__link is-active">
+              <img class="site-nav__icon" src="../images/photo.svg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="diary.html" class="site-nav__link">
+              <img class="site-nav__icon" src="../images/diary.svg" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main id="main">
+      <script src="http://code.jquery.com/jquery-1.11.3.js"></script>
+      <script src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+      <script class="pic" type="text/x-jquery-template">
+        {{each photos}}
+        <li><img src="${src}" alt="" class="pic__list__img"></li>
+        {{/each}}
+      </script>
+      <ul class="pic__list"></ul>
+    </main>
+    <script src="script-nagano.js"></script>
+  </body>
+</html>
